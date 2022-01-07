@@ -8,11 +8,15 @@ body{
 }
 /* most usest tage & element style */
 .container{
-    margin:auto 100px;
+    margin:auto 70px;
 }
 h1,h2,h3{
     font-family: 'Playfair Display', serif;
     font-weight:700;
+}
+h2{
+    font-size: 8vmin;
+    margin: 20px auto;
 }
 a{
     text-decoration:none;
@@ -37,10 +41,16 @@ p{
     color:#ffffff;
     margin: 20px auto;
     border-radius: 5px;
+    transition: .5s ease;
 }
 .col-2{
     flex-basis: 45%;
     padding: 40px;
+    margin: 20px;
+}
+.col-3{
+    flex-basis:30%;
+    padding: 20px;
     margin: 20px;
 }
 .p-color{
@@ -58,6 +68,7 @@ img{
 }
 .nav-menu h2{
     font-size: 2em;
+    margin:0;
 }
 .nav-btn .btn{
     margin: 8px 20px;
@@ -86,7 +97,52 @@ img{
 .examination{
     margin:50px 0;
 }
-.examination h2, .solutions h2{
-    font-size: 8vmin;
-    margin: 20px auto;
+
+/*  Choose your plan */
+.plan{
+    margin: 50px 80px;
+}
+.plan .col-3{
+    box-shadow: 0 0 24px #6C63FF;
+    padding-top: 30px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.plan .col-3 ul{
+    list-style: none;
+    text-align: center;
+}
+.plan .col-3 ul li{
+    margin-bottom: 15px;
+    font-size: 3vmin;
+}
+.plan .price{
+    font-size: 5vmin;
+    font-weight: 700;
+    color: #6C63FF;
+}
+.price-active{
+    background-color:#6C63FF;
+    transform: scale(1.1);
+    color: #ffffff;
+}
+.price-active .price{
+    color:#ffffff;
+}
+.price-active .btn{
+    background-color:#ffffff;
+    color:#6C63FF;
+    
+}
+.plan .col-3:hover{
+    background-color:#6C63FF;
+    transform: scale(1.1);
+    color:#ffffff;
+}
+.plan .col-3:hover .price{
+    color:#ffffff;
+}
+.plan .col-3:hover .btn{
+    background-color:#ffffff;
+    color:#6C63FF;
 }
