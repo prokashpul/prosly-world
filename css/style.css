@@ -46,6 +46,9 @@ p{
 .p-color{
     color:#6C63FF;
 }
+img{
+    width: 100%;
+}
 /* header area style */
 .header-area{
     height:100vh;
@@ -66,9 +69,7 @@ p{
     padding: 10px 15px ;
 }
 
-.header-area .container .col-2 img{
-    width:100%;
-}
+
 .header-area .container h1{
     font-size:10vmin;
     margin: 20px auto;
@@ -76,21 +77,16 @@ p{
 /* clint service style*/
 .clint-service{
     padding: 0 100px;
+    margin: 50px auto;
 }
 .clint-service .col-5{
     flex-basis: 15%;
 }
-.clint-service .col-5 img{
-    width: 100%;
-}
-/* Examination secion style */
+Examination secion style */
 .examination{
     margin:50px 0;
 }
-.examination h2{
+.examination h2, .solutions h2{
     font-size: 8vmin;
     margin: 20px auto;
-}
-.examination img{
-    width:100%;
 }
