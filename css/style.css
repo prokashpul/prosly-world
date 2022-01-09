@@ -83,18 +83,27 @@ img{
     list-style:none;
 }
 .nav-menu ul li{
-    padding: 10px 15px ;
+    padding: 10px 20px ;
+    margin-right: 10px;
 }
-
+.nav-menu ul li:hover{
+    box-shadow: 0 0 24px #6b63ff5b;
+}
 .submenu{
     display: none;
     position:absolute;
-    top:10%;
-    background-color: #6C63FF;
+    padding: 0;
+    top:12%;
     transition: .5s ease;
 }
-.submenu li a{
-    color:azure;
+.submenu li{
+    padding:0;
+    margin: 0;
+    background-color: #6C63FF;
+}
+.submenu li:hover{
+    box-shadow: 0 0 24px #6b63ff5b;
+    background-color:#ffffff;
 }
 .nav-menu > ul > li:hover > .submenu{
     display: block;
@@ -202,18 +211,14 @@ img{
 }
 /* subscrib section */
 .subscrib{
-    text-align: center;
     margin: 50px 30%;
-    padding:50px 20px 20px 20px;
-    box-shadow: 0 0 14px #6b63ff67;
-    background-color:rgb(0, 0, 0);
     border-radius:10px;
 }
 .subscrib input{
-    width:100%;
+    width:90%;
     padding:10px;
     border-radius: 5px;
-    border:none;
+    border-color: #6C63FF;
 }
 .subscrib button{
     border:none;
@@ -222,7 +227,21 @@ img{
     width: 50%;
     padding: 10px ;
 }
-
+legend{
+    font-size:4vmin;
+    padding: 5px;
+    color: #6C63FF;
+    margin-bottom: 10px;
+}
+fieldset{
+    box-shadow: 0 0 14px #6b63ff67;
+    padding:20px;
+    border-radius: 10px;
+    border-color: #6C63FF;
+}
+.input-items{
+        text-align: center;
+}
 /* footer area */
 .footer {
    background-color:#6b63ff21;
